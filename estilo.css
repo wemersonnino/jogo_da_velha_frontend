@@ -1,0 +1,82 @@
+:root{
+    --cor-background: linear-gradient(to right, rgb(157, 80, 187), rgb(110, 72, 170));
+    --cor-fundo: #302b63;
+    --cor-borda-posicao: linear-gradient( 135deg, #E2B0FF 10%, #9F44D3 100%);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--cor-background);
+    color: aliceblue;
+}
+
+#informacoes{
+    min-height: 50px;
+    margin: 0 auto;
+}
+
+#botaoIniciar{
+    font-size: 1.4em;
+    font-weight: 700;
+    background-color: rgb(146,157,157);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=135, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 3px 3px 9px -3px #000000;/*FF 3.5+*/
+    -webkit-box-shadow: 3px 3px 9px -3px #000000;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 3px 3px 9px -3px #000000;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+#botaoIniciar:hover{
+    color: var(--cor-fundo);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=135, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: 3px 3px 9px 9px rgba(0,0,0,0) inset;/*FF 3.5+*/
+    -webkit-box-shadow: 3px 3px 9px 9px rgba(0,0,0,0) inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: 3px 3px 9px 9px rgba(0,0,0,0) inset;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=9, Direction=135, Color=#000000); /*IE 5.5-7*/
+}
+
+#tabuleiro{
+    display: grid;
+    /*grid-template-columns: repeat(3,1fr);*/
+    /*grid-template-rows: repeat(3,1fr);*/
+    grid-gap: 0.2rem;
+    width: min-content;
+    padding-top: 25px;
+}
+
+.posicao{
+    width: 150px;
+    height: 150px;
+    font-size: 90px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    background-color: var(--cor-background);
+    border: solid #FFFF 10px;
+}
+
+#vencedor{
+    font-size: 2em;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 5.5rem;
+    text-decoration-line: overline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: from-font;
+    font-variant-east-asian: full-width;
+}
+input#tamanhoTabuleiro{
+    width: auto;
+    margin: 0 auto 1.5rem auto;
+}
+
